@@ -16,9 +16,9 @@ Makers Review Two
 
 ### Example Input/Outputs
 
-1) Sound wave contains frequencies above high threshold and below low threshold: [60, 10, 45, 60, 1500], 40, 1000 =>	[60, 40, 45, 60, 1000]
-2) Only frequencies below low threshold: [30, 60, 90], 70, 90 => [70, 70, 90]
-3) Only frequencies below high threshold: [30, 60, 90], 30, 50 => [30, 50, 50]
-4) All frequencies fall in range: [30, 60, 90], 30, 90 => [30, 60, 90]
-5) Default thresholds are used instead of custom: [30, 500, 1001] => [40, 500, 1000]
-6) No sound wave provided: [], 60, 90 => Error: No sound wave found
+1) Sound wave contains frequencies above high threshold and below low threshold:<br> [60, 10, 45, 60, 1500], 40, 1000 =>	[60, 40, 45, 60, 1000]
+2) Only frequencies below low threshold:<br> [30, 60, 90], 70, 90 => [70, 70, 90]
+3) Only frequencies below high threshold:<br> [30, 60, 90], 30, 50 => [30, 50, 50]
+4) All frequencies fall in range:<br> [30, 60, 90], 30, 90 => [30, 60, 90]
+5) Default thresholds are used instead of custom:<br> [30, 500, 1001] => [40, 500, 1000]
+6) No sound wave provided:<br> [], 60, 90 => Error: No sound wave found
