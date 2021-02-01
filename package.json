@@ -1,0 +1,14 @@
+{
+  "name": "bandpassfilter",
+  "version": "1.0.0",
+  "description": "Input 1) Sound wave, frequencies - array of integers 2) Low threshold - 40 default, customisable 3) High threshold - 1000 default, customisable",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Malachi Spencer",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
