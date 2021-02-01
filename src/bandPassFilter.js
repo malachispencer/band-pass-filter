@@ -1,4 +1,7 @@
-function bandPassFilter(soundWave, lowThreshold = 40, highThreshold = 1000) {
+const lowWaveDefault = 40;
+const highWaveDefault = 1000;
+
+function bandPassFilter(soundWave, lowThreshold = lowWaveDefault, highThreshold = highWaveDefault) {
   if (!soundWave.length) { throw 'No sound wave found'; }
 
   return soundWave.map(frequency => {
@@ -8,4 +11,4 @@ function bandPassFilter(soundWave, lowThreshold = 40, highThreshold = 1000) {
   });
 }
 
-module.exports = bandPassFilter
+module.exports = bandPassFilter;
