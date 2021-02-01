@@ -22,4 +22,8 @@ describe('bandPassFilter', () => {
   test('handles sound wave with frequencies above and below thresholds', () => {
     expect(bandPassFilter([60, 10, 45, 60, 1500], 40, 1000)).toEqual([60, 40, 45, 60, 1000]);
   });
+
+  test('default low threshold is 40 and default high threshold is 1000', () => {
+    expect(bandPassFilter([10, 500, 1001])).toEqual([40, 500, 1000]);
+  });
 });
