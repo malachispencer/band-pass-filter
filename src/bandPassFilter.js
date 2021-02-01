@@ -8,4 +8,4 @@ function bandPassFilter(soundWave, lowThreshold = 40, highThreshold = 1000) {
   });
 }
 
-module.exports = bandPassFilter;
+module.exports = bandPassFilter
