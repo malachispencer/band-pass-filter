@@ -13,4 +13,9 @@ describe('bandPassFilter', () => {
     expect(bandPassFilter([30], 40, 90)).toEqual([40]);
     expect(bandPassFilter([30, 60, 90], 70, 100)).toEqual([70, 70, 90]);
   });
+
+  test('values above high threshold become high threshold', () => {
+    expect(bandPassFilter([90], 30, 80)).toEqual([80]);
+    expect(bandPassFilter([30, 60, 90], 30, 50)).toEqual([30, 50, 50]);
+  });
 });

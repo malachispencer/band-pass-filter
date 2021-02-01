@@ -4,9 +4,11 @@ function bandPassFilter(soundWave, lowThreshold, highThreshold) {
   return soundWave.map(frequency => {
     if (frequency < lowThreshold) {
       return lowThreshold;
+    } else if (frequency > highThreshold) {
+      return highThreshold;
+    } else {
+      return frequency;
     }
-    
-    return frequency;
   });
 }
 
